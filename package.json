@@ -4,7 +4,7 @@
   "description": "fullstack",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "parcel public/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
