@@ -3,6 +3,4 @@ Initial stack
 
 Parcel
 
-command: 
-
-yarn dev
+set up express and server
