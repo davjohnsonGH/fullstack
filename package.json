@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel public/index.html",
-    "server": "node server/index.js",
+    "db-server": "node server/data/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
