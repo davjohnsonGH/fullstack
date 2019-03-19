@@ -1,0 +1,7 @@
+.cache
+.env
+dist/
+node_modules/
+.DS_Store
+.vscode
+yarn-error.log
