@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel public/index.html",
-    "server": "node server/index.js",
+    "db-server": "node server/data/index.js",
+    "build": "parcel build --public-url ./dist/ public/index.html",
+    "client-server": "npm -s run build && babel-node server/client/Index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -18,9 +20,11 @@
     "parcel-bundler": "^1.12.2"
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
     "express": "^4.16.4",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-router": "^4.3.1"
+    "react-router": "^4.3.1",
+    "react-router-dom": "^5.0.0"
   }
 }
