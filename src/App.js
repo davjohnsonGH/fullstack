@@ -4,7 +4,7 @@ import "babel-polyfill";
 
 class App extends React.Component {
     componentDidMount = async () => {
-        const snapshot = await firestore.collection('posts').get();
+        const snapshot = await firestore.collection('anything').get();
 
         const posts = snapshot.docs.map(doc => {
             return {
