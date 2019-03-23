@@ -11,9 +11,19 @@ const connect = () => {
 }
 
 const thing = new mongoose.Schema({
-    title: String,
-    value: String,
-    active: Boolean
+    title: {
+        type: String,
+        required: true
+    },
+    value: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    active: {
+        type: Boolean,
+        default: false
+    }
 }) 
 
 const Thing = mongoose.model('thing', thing);
@@ -22,8 +32,7 @@ connect()
     .then(async connection => {
         const thing = await Thing.create({
             title: 'thing one',
-            value: 'thing-1',
-            active: true
+            value: 'thing-1'
         })
         console.log(thing);
     })
