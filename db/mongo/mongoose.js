@@ -24,7 +24,7 @@ const thing = new mongoose.Schema({
         type: Boolean,
         default: false
     }
-}) 
+}, {timestamps: true}) 
 
 const Thing = mongoose.model('thing', thing);
 
