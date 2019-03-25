@@ -1,7 +1,9 @@
 import React from 'react';
+
 // ======== only for firebase ===========
 /* import { firestore } from '../db/firebase/config';*/
 // ======== only for firebase ===========
+
 import "babel-polyfill";
 
 class App extends React.Component {
@@ -19,6 +21,20 @@ class App extends React.Component {
         console.log(posts)
          */
       // ======== only for firebase ===========  
+
+      // ======== only for Mongo ===========  
+      /*
+      fetch('http://localhost:5000/thing')
+        .then(res => res.json())
+        .then( (result) => {
+            console.log(result);
+        },
+        (error) => {
+            console.error(error);
+        })
+        */
+        // ======== only for Mongo ===========  
+        
     }    
     render () {
         return (
